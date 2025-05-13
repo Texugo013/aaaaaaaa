@@ -19,16 +19,25 @@
       padding: 20px 0;
       text-align: center;
     }
+    /* Estilos do menu */
     nav {
       background: #155e4a;
-      padding: 10px;
       text-align: center;
+      padding: 10px;
     }
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+    }
+    /* Menu Hamburger */
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      text-align: center;
+      padding: 10px;
     }
     section {
       padding: 20px;
@@ -47,7 +56,37 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* Responsividade para telas pequenas */
+    @media screen and (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        width: 100%;
+        text-align: left;
+      }
+
+      nav a {
+        display: block;
+        padding: 10px;
+        margin: 5px 0;
+        text-align: left;
+      }
+
+      nav.open {
+        display: block;
+      }
+    }
   </style>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('navbar');
+      menu.classList.toggle('open');
+    }
+  </script>
 </head>
 <body>
 
@@ -56,7 +95,12 @@
     <p>Uma solução ecológica para a poluição do solo e da água</p>
   </header>
 
-  <nav>
+  <!-- Menu hamburguer -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="navbar">
     <a href="#oque">O que é</a>
     <a href="#tipos">Tipos</a>
     <a href="#micro">Microrganismos</a>
