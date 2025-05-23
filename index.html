@@ -19,7 +19,6 @@
       padding: 20px 0;
       text-align: center;
     }
-    /* Estilos do menu */
     nav {
       background: #155e4a;
       text-align: center;
@@ -31,7 +30,6 @@
       text-decoration: none;
       font-weight: bold;
     }
-    /* Menu Hamburger */
     .menu-icon {
       display: none;
       font-size: 30px;
@@ -56,33 +54,27 @@
     html {
       scroll-behavior: smooth;
     }
-
-     section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-  }
-
-    /* Responsividade para telas pequenas */
+    section img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+    }
     @media screen and (max-width: 768px) {
       .menu-icon {
         display: block;
       }
-
       nav {
         display: none;
         width: 100%;
         text-align: left;
       }
-
       nav a {
         display: block;
         padding: 10px;
         margin: 5px 0;
         text-align: left;
       }
-
       nav.open {
         display: block;
       }
@@ -102,28 +94,28 @@
     <p>Uma solução ecológica para a poluição do solo e da água</p>
   </header>
 
-  <!-- Menu hamburguer -->
-  <div class="menu-icon" onclick="toggleMenu()">
-    ☰
-  </div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
   <nav id="navbar">
-    <a href="#oque">O que é</a>
-    <a href="#tipos">Tipos</a>
-    <a href="#micro">Microrganismos</a>
-    <a href="#plantas">Plantas</a>
-    <a href="#vantagens">Vantagens</a>
-    <a href="#referencias">Referências</a>
-    <a href="#procarionte">Procarionte</a>
+    <a href="#intro">Introdução</a>
+    <a href="#oque">O que é e seus tipos</a>
+    <a href="#poluentes">Poluentes e micro-organismos</a>
+    <a href="#como">Como funciona</a>
+    <a href="#etapas">Etapas do processo</a>
+    <a href="#estrategias">Estratégias e técnicas</a>
+    <a href="#fito">Fitorremediação</a>
+    <a href="#historico">Contexto histórico e casos reais</a>
+    <a href="#vantagens">Vantagens e desvantagens</a>
+    <a href="#conclusao">Conclusão</a>
   </nav>
 
-  <section id="oque">
-    <h2>O que é Biorremediação?</h2>
+  <section id="intro">
+    <h2>Introdução</h2>
     <p>TESTANDO 1 2 3 HERTHA FISICA SEI LA.</p>
   </section>
 
-  <section id="tipos">
-    <h2>Tipos de Biorremediação</h2>
+  <section id="oque">
+    <h2>O que é Biorremediação e seus tipos</h2>
     <ul>
       <li><strong>Atenuação natural:</strong> o ambiente se recupera com ajuda da microbiota nativa.</li>
       <li><strong>Bioestimulação:</strong> adiciona nutrientes para estimular os microrganismos existentes.</li>
@@ -132,14 +124,35 @@
     </ul>
   </section>
 
-  <section id="micro">
-    <h2>Microrganismos Envolvidos</h2>
+  <section id="poluentes">
+    <h2>Poluentes combatidos e micro-organismos envolvidos</h2>
     <p>Algumas bactérias usadas são <em>Pseudomonas</em>, <em>Bacillus</em> e <em>Rhodococcus</em>, que degradam derivados do petróleo. Fungos como <em>Trametes</em> também atuam na decomposição de compostos tóxicos.</p>
   </section>
 
-  <section id="plantas">
-    <h2>Fitorremediação</h2>
+  <section id="como">
+    <h2>Como funciona</h2>
+    <p><strong>Linguagem simples:</strong> A biorremediação usa microrganismos e plantas para "limpar" o solo e a água contaminados.</p>
+    <p><strong>Linguagem científica:</strong> Trata-se de um processo biológico no qual organismos vivos metabolizam contaminantes orgânicos ou inorgânicos, transformando-os em substâncias menos tóxicas.</p>
+  </section>
+
+  <section id="etapas">
+    <h2>Etapas do processo</h2>
+    <p>As etapas incluem a análise do solo, seleção dos organismos apropriados, preparação do ambiente e monitoramento contínuo da degradação dos contaminantes.</p>
+  </section>
+
+  <section id="estrategias">
+    <h2>Estratégias e técnicas</h2>
+    <p>Além da bioaumentação e bioestimulação, outras técnicas incluem biorreatores, biorremediação in situ e ex situ, e uso combinado de microrganismos e plantas.</p>
+  </section>
+
+  <section id="fito">
+    <h2>Aprofundamento na Fitorremediação</h2>
     <p>É o uso de plantas para absorver ou imobilizar contaminantes. Plantas como girassol e mostarda-branca podem remover metais pesados do solo, como chumbo e cádmio.</p>
+  </section>
+
+  <section id="historico">
+    <h2>Contexto histórico e casos reais</h2>
+    <p>A biorremediação começou a ser estudada na década de 1970. Casos famosos incluem o vazamento de óleo Exxon Valdez e áreas industriais nos EUA e Europa com solos restaurados.</p>
   </section>
 
   <section id="vantagens">
@@ -148,18 +161,13 @@
     <p><strong>Desvantagens:</strong> processo lento, depende de condições ambientais específicas.</p>
   </section>
 
-  <section id="referencias">
-    <h2>Fontes:</h2>
-    <p>Todas as vozes da minha pequena cabeça hihihihi</p>
-   <figure>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/O_Xaropinho.jpg" alt="Xaropinho">
-  <figcaption>Figura 1: O icônico Xaropinho.</figcaption>
-</figure>
-  </section>
-
-  <section id="procarionte">
-    <h2>O que é um Procarionte?</h2>
-    <p>Procariontes são organismos unicelulares que não possuem núcleo definido. Seu material genético fica disperso no citoplasma. Exemplos incluem bactérias e arqueas.</p>
+  <section id="conclusao">
+    <h2>Conclusão e Perspectivas Futuras</h2>
+    <p>A biorremediação é promissora para enfrentar a poluição de maneira sustentável. Avanços em biotecnologia e engenharia genética poderão ampliar sua eficácia e aplicabilidade.</p>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/O_Xaropinho.jpg" alt="Xaropinho">
+      <figcaption>Figura 1: O icônico Xaropinho.</figcaption>
+    </figure>
   </section>
 
   <footer>
